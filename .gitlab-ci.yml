@@ -1,18 +1,26 @@
-image: node:latest
+cache:
+  paths:
+    - node_modules/
 
 stages:
-    - staging
+  - init
+  - deploy_prod
 
-staging:
-    type: deploy
-    stage: staging
-    script:
-        - gem install dpl
-        - dpl --provider=heroku --app=$HEROKU_APP --api-key=$HEROKU_API_KEY
-     only:
-        - master
+init:
+  stage: init
+  image: node:12.16.1
+  script:
+    - npm install
 
 
+deploy_production:
+  image: node:12.16.1
+  stage: deploy_prod
+  script:
+    - git push https://$HEROKU_USER:$HEROKU_API_KEY@git.heroku.com/first-inmo-project1.git HEAD:master
+    - echo "Deployed to production server"
+  only:
+    - master
 
 
     
