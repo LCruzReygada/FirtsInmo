@@ -1,12 +1,17 @@
 image: node:latest
 
 stages:
-  - deploy
+    - staging
 
-deploy:
+staging:
     type: deploy
-  only:
-    - master
-  script:
-    - dpl --provider=heroku --app=$HEROKU_APP --api-key=$HEROKU_API_KEY
+    stage: staging
+    script:
+        - dpl --provider=heroku --app=$HEROKU_APP --api-key=$HEROKU_API_KEY
+     only:
+        - master
+
+
+
+
     
