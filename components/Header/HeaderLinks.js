@@ -57,8 +57,6 @@ export default function HeaderLinks(props) {
           target="_blank"
           className={classes.navLink}
         >
-       
-          
           <Icon className={classes.icons}>unarchive</Icon>
            Administrador
         </Button>

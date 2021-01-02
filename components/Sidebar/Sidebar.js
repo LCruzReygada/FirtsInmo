@@ -85,8 +85,8 @@ export default function Sidebar(props) {
   );
   var brand = (
     <div className={classes.logo}>
+ <Link href="/components">
       <a
-        href="https://www.creative-tim.com?ref=njsmd-sidebar"
         className={classNames(classes.logoLink, {
           [classes.logoLinkRTL]: props.rtlActive,
         })}
@@ -97,6 +97,7 @@ export default function Sidebar(props) {
         </div>
         {logoText}
       </a>
+      </Link>
     </div>
   );
   return (
