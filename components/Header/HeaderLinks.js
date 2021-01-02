@@ -59,6 +59,17 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+      <Link href="/landing">
+        <Button
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <CloudDownload className={classes.icons} /> Tarifas
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
       <Link href="/admin/dashboard">
         <Button
           color="transparent"
@@ -69,16 +80,6 @@ export default function HeaderLinks(props) {
            Administrador
         </Button>
         </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <CloudDownload className={classes.icons} /> Download
-        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
