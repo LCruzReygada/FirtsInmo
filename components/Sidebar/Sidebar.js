@@ -83,7 +83,7 @@ export default function Sidebar(props) {
       })}
     </List>
   );
-  var brand = (
+  const brand = (
     <div className={classes.logo}>
  <Link href="/components">
       <a
