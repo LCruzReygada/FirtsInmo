@@ -14,7 +14,8 @@ const navbarsStyle = theme => ({
     textDecoration: "none"
   },
   navbar: {
-    marginBottom: "-20px",
+    marginBottom: "200px",
+    marginTop: "200px",
     zIndex: "100",
     position: "relative",
     overflow: "hidden",
@@ -24,7 +25,8 @@ const navbarsStyle = theme => ({
   },
   navigation: {
     backgroundPosition: "center center",
-    backgroundSize: "cover",
+    backgroundSize: "100% 70%",
+    backgroundRepeat: "no-repeat",
     marginTop: "0",
     minHeight: "740px"
   },

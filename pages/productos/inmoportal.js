@@ -30,6 +30,7 @@ import SectionDownload from "pages-sections/Components-Sections/SectionDownload.
 
 import styles from "assets/jss/nextjs-material-kit/pages/components.js";
 import TransparentNavbars from "../../pages-sections/Components-Sections/TransparentNavbars";
+import ImageSearch from "../../components/Productos/ImageSearch";
 
 const useStyles = makeStyles(styles);
 
@@ -38,21 +39,8 @@ export default function InmoPortal(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
-        brand="InmoAdmin"
-        rightLinks={<HeaderLinks />}
-        fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
-      />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <TransparentNavbars />
-        <SectionExamples />
-        <SectionDownload />
       </div>
       <Footer />
     </div>

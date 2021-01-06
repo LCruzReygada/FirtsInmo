@@ -18,10 +18,11 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
-import image from "assets/img/bg.jpg";
+import image from "assets/img/pexels-essow-kedelina-936722.jpg";
 import profileImage from "assets/img/faces/avatar.jpg";
 
 import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/navbarsStyle.js";
+import SectionSearch from "./SectionSearch";
 
 const useStyles = makeStyles(styles);
 
@@ -29,78 +30,50 @@ export default function TransparentNavbars() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <div className={classes.container}>
-        <div className={classes.title}>
-          <h3>Navigation</h3>
-        </div>
-      </div>
       <div id="navbar" className={classes.navbar}>
         <div
           className={classes.navigation}
           style={{ backgroundImage: "url(" + image + ")" }}
-        >
-          <Header
-            brand="Transparent"
-            color="transparent"
-            rightLinks={
-              <List className={classes.list}>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    color="transparent"
-                    className={
-                      classes.navLink + " " + classes.socialIconsButton
-                    }
-                  >
-                    <i
-                      className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-twitter"
-                      }
-                    />{" "}
-                    Twitter
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    color="transparent"
-                    className={
-                      classes.navLink + " " + classes.socialIconsButton
-                    }
-                  >
-                    <i
-                      className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-facebook"
-                      }
-                    />{" "}
-                    Facebook
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    color="transparent"
-                    className={
-                      classes.navLink + " " + classes.socialIconsButton
-                    }
-                  >
-                    <i
-                      className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-instagram"
-                      }
-                    />{" "}
-                    Instagram
-                  </Button>
-                </ListItem>
-              </List>
-            }
-          />
+        >       
+        <Header
+        brand="Navbar with profile"
+        rightLinks={
+          <List className={classes.list}>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Discover
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Wishlist
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.registerNavLink}
+                onClick={e => e.preventDefault()}
+                color="rose"
+                round
+              >
+                Register
+              </Button>
+            </ListItem>
+          </List>
+        }
+      />
+      <SectionSearch/>
         </div>
       </div>
     </div>
