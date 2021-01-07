@@ -8,7 +8,6 @@ const basicsStyle = {
   container,
   title: {
     ...title,
-    marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none"
   },

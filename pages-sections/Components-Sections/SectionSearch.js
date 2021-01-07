@@ -24,6 +24,7 @@ import Badge from "components/Badge/Badge.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/basicsStyle.js";
 
+
 const useStyles = makeStyles(styles);
 
 export default function SectionSearch() {
@@ -46,31 +47,15 @@ export default function SectionSearch() {
   return (
     <div className={classes.sections}>
       <div className={classes.container}>
-        <div className={classes.title}>
-          <h2>Basic Elements</h2>
-        </div>
+        
         <div id="buttons">
-          <div className={classes.title}>
-            <h3>
-              Buttons
-              <br />
-              <small>Pick your style</small>
-            </h3>
-          </div>
-          <div className={classes.title}>
-            <h3>
-              <small>Pick your color</small>
-            </h3>
-          </div>
-          <GridContainer justify="center">
+           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8}>
-              <Button>Default</Button>
-              <Button color="primary">Primary</Button>
-              <Button color="info">Info</Button>
-              <Button color="success">Success</Button>
-              <Button color="warning">Warning</Button>
-              <Button color="danger">Danger</Button>
-              <Button color="rose">Rose</Button>
+              <Button color="default">Default</Button>
+              <Button color="default">Default</Button>
+              <Button color="default">Default</Button>
+              <Button color="default">Default</Button>
+              <Button color="default">Default</Button>
             </GridItem>
           </GridContainer>
         </div>
