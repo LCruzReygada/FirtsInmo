@@ -31,6 +31,7 @@ import SectionDownload from "pages-sections/Components-Sections/SectionDownload.
 import styles from "assets/jss/nextjs-material-kit/pages/components.js";
 import TransparentNavbars from "../../pages-sections/Components-Sections/TransparentNavbars";
 import ImageSearch from "../../components/Productos/ImageSearch";
+import GiftExpertApp from "../../components/Gifs/GiftExpertApp";
 
 const useStyles = makeStyles(styles);
 
@@ -41,6 +42,7 @@ export default function InmoPortal(props) {
     <div>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <TransparentNavbars />
+        <GiftExpertApp/>
       </div>
       <Footer />
     </div>

@@ -1,12 +1,12 @@
 import React from 'react'
-import { useFetchGifs } from '../Hooks/useFetchGifs'
+import { useFetchGifs } from '../../Hooks/useFetchGifs';
 import { GifGirdItem } from './GifGirdItem';
 
 
 const GiftGird = ({ category })=> {
 
    const {data:images, loading} = useFetchGifs(category);
-           
+     useFetchGifs      
     return (
 
        <>
