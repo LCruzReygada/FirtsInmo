@@ -4,7 +4,7 @@ import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
 
 const titleStyle = {
   section: {
-    padding: "70px 0"
+    padding: "0 0"
   },
   container,
   space50: {
@@ -20,7 +20,8 @@ const titleStyle = {
   },
   typo: {
     paddingLeft: "25%",
-    marginBottom: "10px",
+    marginBottom: "0px",
+    marginTop: "0px",
     position: "relative",
     width: "100%"
   },

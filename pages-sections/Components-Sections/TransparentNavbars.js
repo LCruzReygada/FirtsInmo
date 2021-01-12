@@ -18,13 +18,14 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
-import image from "assets/img/pexels-pixabay-262367.jpg";
+import image from "assets/img/pexels-pixabay-262347.jpg";
 import profileImage from "assets/img/faces/avatar.jpg";
 
 import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/navbarsStyle.js";
 import SectionSearch from "./SectionSearch";
 import SectionTitle from "./SectionTitle";
 import CasaIcon from "../../assets/icon/CasaIcon";
+import SectionMenu from "./SectionMenu";
 
 const useStyles = makeStyles(styles);
 
@@ -77,8 +78,7 @@ export default function TransparentNavbars() {
       />
     
       <SectionTitle/>
-      <SectionSearch/>
-  
+      <SectionMenu/>
         </div>
       </div>
     </div>

@@ -40,7 +40,7 @@ export default function SectionTitle() {
             </div>
             <div className={classes.typo}>
              
-              <h4 className={classes.title}>Encuentra tu casa de alquiler o compra entre más de 1,5M de inmuebles</h4>
+              <h4 className={classes.title}>Encuentra tu casa de alquiler o compra un inmueble</h4>
             </div>
             </GridContainer>
         </div>
